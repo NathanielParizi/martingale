@@ -17,9 +17,9 @@ public class n {
 		int prob = 0;
 	
 				
-		double wager = 100;
+		double wager = 50;
 		
-		double finalwager =100;
+		double finalwager =50;
 		
 		
 		Random rand = new Random();
@@ -41,7 +41,7 @@ public class n {
 	
 			
 			
-			if(prob >= 55)
+			if(prob >= 40)
 			{
 				money = money + wager;
 				wager = finalwager;
@@ -60,7 +60,7 @@ public class n {
 			
 		trades++;
 		
-		int days = trades/200;
+		int days = trades/100;
 		System.out.println( "$" + (Math.floor(money * 100) / 100) + "  trades: " + trades + "  \t" + "days " + days + "\n");
 		
 		if(money <= 0){
